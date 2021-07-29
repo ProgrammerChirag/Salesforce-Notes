@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "Notes_ORG",
+  "name": "Salesforce-Notes",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "52.0"
