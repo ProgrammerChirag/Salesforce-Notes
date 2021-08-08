@@ -1,0 +1,10 @@
+.THIS lightning-primitive-header-actions {
+    display:none;
+}
+
+.THIS.exampleHolder{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}

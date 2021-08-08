@@ -1,0 +1,89 @@
+<template>
+    <div class="slds-card__header slds-p-around_x-small">
+        <div class="slds-grid ">
+            <div class="slds-col slds-size_1-of-12">
+                <b>
+                    <div class='slds-text-heading_large'>Login</div>
+                </b>
+            </div>
+        </div>
+        <div class="slds-text-heading_medium slds-m-top_x-small">
+            Login to continue
+        </div>
+    </div>
+    <lightning-tabset>
+        <lightning-tab label="Login With Email">
+            <div class="slds-card">
+                <main>
+                    <form>
+                        <fieldset>
+                            <div class="slds-form-element">
+                                <div class="slds-p-around_medium lgc-bg">
+                                    <lightning-input type="email" label="Email" placeholder="Enter Your Email" required
+                                        value={userEmail} onchange={userEmailChange}></lightning-input>
+                                </div>
+                            </div>
+
+                            <div class="slds-form-element">
+                                <div class="slds-p-around_medium lgc-bg">
+                                    <lightning-input type="password" label="password" placeholder="Enter Your password"
+                                        required value={userPassword} onchange={userPassChange}></lightning-input>
+                                </div>
+                            </div>
+                            <div
+                                class="slds-form-element slds-m-top_medium slds-m-left_medium slds-m-right_medium slds-size_full">
+                                <lightning-button variant="brand" label="Login" title="Primary action"
+                                    onclick={_loginWithEmailAndPassword} class="slds-button slds-button_stretch">
+                                </lightning-button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+        </lightning-tab>
+
+        <lightning-tab label="CREATE ACCOUNT" title="2nd tab extended title">
+            <div class="slds-card slds-p-around_x-small">
+                <main>ś
+                    <form>
+                        <fieldset>
+                            <div class="slds-form-element">
+                                <div class="slds-p-around_medium lgc-bg">
+                                    <lightning-input type="email" label="Email" placeholder="Enter Your Email" required
+                                        value={userEmail} onchange={userEmailChange}></lightning-input>
+                                </div>
+                            </div>
+
+                            <div class="slds-form-element">
+                                <div class="slds-p-around_medium lgc-bg">
+                                    <lightning-input type="password" label="password" placeholder="Enter Your password"
+                                        required value={userPassword} onchange={userPasswordChange}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <div class="slds-p-around_medium lgc-bg">
+                                    <lightning-input type="password" label="Confirm password"
+                                        placeholder="Enter Your password" required value={userPasswordConfirm}
+                                        onchange={userPasswordConfirmChange}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <div class="slds-p-around_medium lgc-bg">
+                                    <lightning-input type="text" label="Name" placeholder="Enter Your Name" required
+                                        value={userName} onchange={userNameChange}></lightning-input>
+                                </div>
+                            </div>
+                            <div
+                                class="slds-form-element slds-m-top_medium slds-m-left_medium slds-m-right_medium slds-size_full">
+                                <lightning-button variant="brand" label="CREATE ACCOUNT" title="Primary action"
+                                    onclick={_signUpWithEmailAndPassword} class="slds-button slds-button_stretch">
+                                </lightning-button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+        </lightning-tab>
+    </lightning-tabset>
+
+</template>

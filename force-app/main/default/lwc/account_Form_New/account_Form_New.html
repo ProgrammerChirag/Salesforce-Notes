@@ -1,6 +1,9 @@
 <template>
     <lightning-card title='CREATE ACCOUNT RECORD'>
-        <lightning-record-form object-api-name={accountObject} fields={myFields} onsuccess={handleAccountCreated}>
+        <div class='slds-p-top_small slds-p-bottom_small slds-p-left_small slds-p-right_small'>
+                    <lightning-record-form object-api-name={accountObject} fields={myFields} onsuccess={handleAccountCreated}>
         </lightning-record-form>
+        </div>
+
     </lightning-card>
 </template>
